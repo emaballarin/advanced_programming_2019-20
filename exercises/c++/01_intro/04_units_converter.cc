@@ -2,7 +2,7 @@
 #include <iostream>
 #include <iomanip>
 
-const double mtoin = 39.3701;
+const double mtoin = 39.3701;   // Inches in a meter
 
 int main()
 {

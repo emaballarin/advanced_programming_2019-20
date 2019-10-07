@@ -8,6 +8,11 @@
  * Safer approaches should require string-based manipulation and/or variable-epsilon comparisons.
  */
 
+// FUNCTION PROTOTYPES (not *that* useful in this case...)
+static bool epsEqual(double lhs, double rhs, double epsilon);
+static double getDouble();
+static int getInt();
+
 
 // Simple comparison tool (up to double precision)
 static bool epsEqual(double lhs, double rhs, double epsilon)
