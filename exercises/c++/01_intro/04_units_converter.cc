@@ -1,8 +1,8 @@
-#include <string>       // string
-#include <iostream>     // cin, cout, endl
-#include <iomanip>      // setprecision
+#include <iomanip>   // setprecision
+#include <iostream>  // cin, cout, endl
+#include <string>    // string
 
-const double mtoin = 39.3701;   // Inches in a meter
+const double mtoin = 39.3701;  // Inches in a meter
 
 int main()
 {
@@ -21,14 +21,15 @@ int main()
     if (strIn == "in")
     {
         strOut = "m";
-        unitOut = unitIn/mtoin;
+        unitOut = unitIn / mtoin;
     }
     else if (strIn == "m")
     {
         strOut = "in";
-        unitOut = unitIn*mtoin;
+        unitOut = unitIn * mtoin;
     }
-    else return 1; // Should never happen.
+    else
+        return 1;  // Should never happen.
 
     std::setprecision(10);
     std::cout << unitIn << " " << strIn << " equals to " << unitOut << " " << strOut << std::endl;

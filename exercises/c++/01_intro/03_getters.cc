@@ -1,5 +1,5 @@
-#include <iostream>     // cin, cout, endl
-#include <string>       // string
+#include <iostream>  // cin, cout, endl
+#include <string>    // string
 
 /*
  * Relatively-safe getters for int and double types. *
@@ -23,7 +23,7 @@ static bool epsEqual(double lhs, double rhs, double epsilon)
 static double getDouble()
 {
     double charfeed{};
-    while(!(std::cin >> charfeed))
+    while (!(std::cin >> charfeed))
     {
         std::cout << "Please, retry..." << std::endl;
         std::cin.clear();
@@ -34,14 +34,13 @@ static double getDouble()
 }
 
 
-
 static int getInt()
 {
     double charfeed{};
 
     // 1st condition: catch char/literal input;
     // 2nd condition: check if the input is integer;
-    while(!((std::cin >> charfeed) && (epsEqual(charfeed,static_cast<int>(charfeed),1e-16))))
+    while (!((std::cin >> charfeed) && (epsEqual(charfeed, static_cast<int>(charfeed), 1e-16))))
     {
         std::cout << "Please, retry..." << std::endl;
         std::cin.clear();

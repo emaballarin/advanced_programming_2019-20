@@ -1,4 +1,4 @@
-#include <iostream>     // cout, endl
+#include <iostream>  // cout, endl
 
 int main()
 {

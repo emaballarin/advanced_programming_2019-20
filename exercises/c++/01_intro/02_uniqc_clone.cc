@@ -1,5 +1,5 @@
-#include <string>       // string
-#include <iostream>     // cin, cout, endl
+#include <iostream>  // cin, cout, endl
+#include <string>    // string
 
 int main()
 {
@@ -10,15 +10,13 @@ int main()
     std::getline(std::cin, linefeed);
     previous_line = linefeed;
 
-    for(std::string linefeed; std::getline(std::cin,linefeed);) // Acceptable variable shadowing (-Wshadow)
+    for (std::string linefeed; std::getline(std::cin, linefeed);)  // Acceptable variable shadowing (-Wshadow)
     {
-        if (previous_line == linefeed)
-        {
-            wordcnt++;
-        }
+        if (previous_line == linefeed) { wordcnt++; }
         else
         {
-            std::cout << "     " << wordcnt << " "<< previous_line << std::endl;    // 5 spaces is hardcoded from the original
+            std::cout << "     " << wordcnt << " " << previous_line
+                      << std::endl;  // 5 spaces is hardcoded from the original
             wordcnt = 1;
         }
 
@@ -26,5 +24,5 @@ int main()
     }
 
     // Flush buffered word/count
-    std::cout << "     " << wordcnt << " "<< previous_line << std::endl;    // 5 spaces is hardcoded from the original
+    std::cout << "     " << wordcnt << " " << previous_line << std::endl;  // 5 spaces is hardcoded from the original
 }
