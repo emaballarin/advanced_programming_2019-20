@@ -1,5 +1,5 @@
 CXX = c++
-CXXFLAGS = -Wall -Wextra -g -std=c++11
+CXXFLAGS = -Wall -Wextra -g -std=c++17
 
 SRC = 01_variables.cc          \
     02_hello_name.cc           \
