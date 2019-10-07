@@ -1,6 +1,5 @@
-#include <iostream>
-#include <cmath>
-#include <string>
+#include <iostream>     // cin, cout, endl
+#include <string>       // string
 
 /*
  * Relatively-safe getters for int and double types. *
