@@ -1,5 +1,5 @@
-#include <string>
-#include <iostream>
+#include <string>       // string
+#include <iostream>     // cin, cout, endl
 
 // Max. line length
 const unsigned int linelen{80};

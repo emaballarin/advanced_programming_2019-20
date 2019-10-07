@@ -1,6 +1,6 @@
-#include <string>
-#include <iostream>
-#include <iomanip>
+#include <string>       // string
+#include <iostream>     // cin, cout, endl
+#include <iomanip>      // setprecision
 
 const double mtoin = 39.3701;   // Inches in a meter
 
