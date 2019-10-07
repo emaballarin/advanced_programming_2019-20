@@ -24,6 +24,12 @@
 *.so
 *.a
 
+# Code analysis configuration files
+compile_flags.txt
+
+# Clang Formatter
+.clang-format
+
 # Special files and folders
 gitignored-*
 **/gitignored-*/
