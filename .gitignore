@@ -1,0 +1,29 @@
+# Configuration directories
+**/.vscode/
+**/.idea/
+**/.clion/
+**/.pycharm/
+**/.atom/
+
+# Configuration files
+/AdvancedProgramming20192020.cflags
+/AdvancedProgramming20192020.config
+/AdvancedProgramming20192020.creator
+/AdvancedProgramming20192020.creator.user
+/AdvancedProgramming20192020.cxxflags
+/AdvancedProgramming20192020.files
+/AdvancedProgramming20192020.includes
+
+# Dolphin configuration
+.directory
+
+# Built binaries/onjects/libraries
+*.o
+*.x
+*.exe
+*.so
+*.a
+
+# Special files and folders
+gitignored-*
+**/gitignored-*/

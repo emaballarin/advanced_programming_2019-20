@@ -1,18 +1,20 @@
 sudo: false
 language: cpp
+dist: bionic
 
 addons:
   apt:
     sources:
-      - llvm-toolchain-precise-3.8
       - ubuntu-toolchain-r-test
+      - sourceline: "deb https://apt.llvm.org/bionic/ llvm-toolchain-bionic-9 main"
+        key_url: "https://apt.llvm.org/llvm-snapshot.gpg.key"
     packages:
-      - g++-6
-      - clang-3.8
+      - g++-9
+      - clang-9
 
 env:
-  - COMPILER=g++-6
-  - COMPILER=clang++-3.8
+  - COMPILER=g++-9
+  - COMPILER=clang++-9
 
 script:
   - make CXX=$COMPILER

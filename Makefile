@@ -3,14 +3,17 @@
 
 default: all
 
-all: 
+all:
 	+$(MAKE) $@ -C lectures
+	+$(MAKE) $@ -C exercises
 
 clean:
 	+$(MAKE) $@ -C lectures
+	+$(MAKE) $@ -C exercises
 	@find . -type f \( -name '*~' -o -name 'a.out' \) -exec rm '{}' \;
 
 format:
 	+$(MAKE) $@ -C lectures
+	+$(MAKE) $@ -C exercises
 
 .PHONY: all clean format default

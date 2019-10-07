@@ -1,0 +1,13 @@
+car
+car
+show
+parallel
+weight
+arm
+parallel
+shoulder
+sideway
+side
+aside
+arm
+car

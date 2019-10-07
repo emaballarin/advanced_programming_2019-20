@@ -1,0 +1,16 @@
+ALL-TEXT-AS-A-LINE
+
+Cobalamin or vitamin B12 is a bioinorganic compound containing cobalt ion. The discovery of this compound has promoted cobalt, an essential element for life. Vitamin B12 is a crystalline substance of red color, hygroscopic, photosensitive, and soluble in water. Historically three American scientists, George Hoyt WHIPPLE (Pathologist), George Richard MINOT (Physicist) and William Parry MURPHY (Physicist) experimented with the use of raw bovine liver in the diet of pernicious anemia patients with success and obtained Nobel Prize for medicine in 1935. The explanation of this recovery was given in 1948 by the American chemist Karl August Folkers isolating a factor from the bovine liver that was begged vitamin B12. Subsequently the 4 active forms [Figure 1] of vitamin B12 with X-ray diffraction were determined. From a chemical point of view the molecule develops around the bivalent ion of cobalt coordinated by 4 nitrogen atoms coming from a corrinic system [Figure 2] . Vitamin B12 appears as a characteristic red color [Figure 3]. The coordination of the cobalt ion is of the octahedral type and the 4 known forms of vitamin B12 depend on the group R [Figure1], in particular if R = CN we have cyanocobalamin, if R = OH we get the hydroxocobalamin; if R = methyl, we will have methylcobalamin; finally, if R is made from adenosyl group (Ado) we have adenosylcobalamin. Vitamin B12 intervenes in the transformation of methyl malonate coA into Succinyl CoA catalyzed by the enzyme methyl malonyl CoA mutase activated by the Adenosyl Cobalamin form. It plays an essential role in the methionine cycle, in particular in the conversion of Homocysteine ​​to methionine catalysed by the enzyme Methionine synthase, activated by the methylcobalamin generated in turn by the folate cycle and by betaine to make methyl donation. To understand the latter biochemical reaction it may be useful to observe the vitamin B12 cycle [Figure 4]. It is important to note that mammals take vitamin B12 with their diet. The major synthesizers of this vitamin are microorganisms such as bacteria, fungi and sometimes algae.
+
+SOME NEWLINES
+
+
+
+
+NEWLINE ON COLON (BUT SOME LINES ARE STILL >= 80 CHARS)
+
+Cobalamin or vitamin B12 is a bioinorganic compound containing cobalt ion.
+The discovery of this compound has promoted cobalt, an essential element for life.
+Vitamin B12 is a crystalline substance of red color, hygroscopic, photosensitive, and soluble in water.
+Historically three American scientists, George Hoyt WHIPPLE (Pathologist), George Richard MINOT (Physicist) and William Parry MURPHY (Physicist) experimented with the use of raw bovine liver in the diet of pernicious anemia patients with success and obtained Nobel Prize for medicine in 1935.
+The explanation of this recovery was given in 1948 by the American chemist Karl August Folkers isolating a factor from the bovine liver that was begged vitamin B12.

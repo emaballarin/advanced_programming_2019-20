@@ -1,12 +1,11 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -g -std=c++11
 
-SRC = 01_variables.cc          \
-    02_hello_name.cc           \
-    03_loops.cc                \
-    04_vars_pointers_refs.cc   \
-    05_functions.cc            \
-    06_watch_out.cc
+SRC = 01_compiler_errors.cc    \
+    02_uniqc_clone.cc          \
+    03_getters.cc              \
+    04_units_converter.cc      \
+    05_txtformat.cc
 
 EXE = $(SRC:.cc=.x)
 
