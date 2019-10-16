@@ -6,36 +6,28 @@ using namespace std;
 
 int main()
 {
-    usl ubprimes{};
+    // Acquire primes upper bound...
+    usl upbound{};
+    cout << "Insert the upper bound of the prime search:" << endl;
+    cin >> upbound;
 
-    cout << "Insert a number (primes upper bound)..." << endl;
-    cin >> ubprimes;
+    // Allocate the searchspace
+    usl *searchspace = new usl[upbound - 1];  // Index from 0 to upbound-1 -> (i + 2ul)bers from 2 to upbound
 
-    usl *searchspace = new usl[ubprimes - 1ul];
+    // Fill the searchspace...
+    for (usl i{0ul}; i < (upbound - 1ul); i++) { searchspace[i] = i + 2ul; }
 
-    // Fill with integers upto upper bound.
-    for (usl i = 2; i < ubprimes; i++) { searchspace[i - 2ul] = i; }
-
-    // Use the sieve
-    for (usl j = 0; j < ubprimes - 1ul; j++)
+    // Use the sieve:
+    for (usl i{0ul}; i < (upbound - 1ul); i++)
     {
-        if (searchspace[j] == 0) { continue; }
-        else
+        if ((i + 2ul) != 0)
         {
-            for (usl k = 2;
-                 k <= (static_cast<unsigned long>((ubprimes) / static_cast<unsigned long>((j))) && k <= ubprimes - 1ul);
-                 k++)
-            { searchspace[k * searchspace[j] - 2ul] = 0; }
+            for (usl k{2ul}; k * ((i + 2ul)) <= upbound; k++) { searchspace[(k * (i + 2ul) - 2)] = 0ul; }
         }
     }
 
-    // Print the result
-    for (usl j = 0; j < ubprimes - 1ul; j++)
+    for (usl i{0ul}; i < (upbound - 1ul); i++)
     {
-        if (searchspace[j] != 0) { cout << searchspace[j] << " "; }
+        if (searchspace[i] != 0ul) { cout << searchspace[i] << endl; }
     }
-    cout << endl;
-
-    // Cleanup
-    delete[] searchspace;
 }
