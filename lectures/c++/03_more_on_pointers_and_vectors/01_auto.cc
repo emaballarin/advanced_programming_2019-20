@@ -1,8 +1,10 @@
 #include <cmath>
 #include <iostream>
 
+// 201103L is the official string of version "C++ 2011". If more than that, it's at least C++14.
 #if __cplusplus > 201103L
 
+// Templated heap inizialization (for the new keyword; and auto return type (C++14))
 template <class T>
 auto init(const std::size_t l)
 {
@@ -11,6 +13,7 @@ auto init(const std::size_t l)
 
 #else
 
+// Templated heap inizialization (for the new keyword; WITHOUT auto return type (C++11))
 template <class T>
 T *init(const std::size_t l)
 {

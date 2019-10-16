@@ -8,10 +8,12 @@ int main()
     int a{8}, b{7};
     int *pi{&a};
 
+    // The dereferenced pointer is CONSTANT. The variable value is FIXED.
     const int *pc{&a};
     // *pc = 7; 	// error
     a = 15;  // I can obviously change a
 
+    // The pointer address is constant, not the pointer variable.
     int *const cp{&a};
     a = b;
     *cp = 33;
@@ -30,8 +32,9 @@ int main()
 }
 
 template <typename T>
-void print_sentinel(const T *a, const std::size_t l)
+void print_sentinel(const T *a, const std::size_t N)
 {
-    const T *const end{a + l};
-    for (; a != end; ++a) std::cout << *a << std::endl;
+    const T *const end{
+      a + N};  // Pointer to the LAST element, plus one. a[N] must remain constant, because it is not part of a.
+    for (; a != end; ++a) std::cout << *a << std::endl;  // Methodology of "pointer arithmetics" as in the STL.
 }

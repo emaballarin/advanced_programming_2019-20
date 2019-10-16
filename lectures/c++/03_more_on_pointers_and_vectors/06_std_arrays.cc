@@ -24,6 +24,7 @@ int main()
     for (const auto x : b) std::cout << x << " ";
     std::cout << std::endl;
 
+    // Passing by reference: if done with x and not &a, the x dies after the scope.
     for (auto &x : a) x *= 10;
 
     for (auto i = 0u; i < a.size(); ++i) std::cout << "a[" << i << "] = " << a[i] << std::endl;

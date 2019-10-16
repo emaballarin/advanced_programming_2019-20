@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <vector>  // ALways in the HEAP
 
 // template<class T, class Allocator = std::allocator<T>>
 // class vector;
@@ -10,13 +10,13 @@ void print_vector(const std::vector<T> &v, const std::string &s);
 
 int main()
 {
-    std::vector<int> v0{1, 2, 4};
-    std::vector<int> v1(4, 4);
+    std::vector<int> v0{1, 2, 4};  // A vector with elements 1, 2, 4.
+    std::vector<int> v1(4, 4);     // 4 elements of value 4.
 
     print_vector(v0, "v0");
     print_vector(v1, "v1");
 
-    v1 = v0;
+    v1 = v0;  // It just works!
 
     print_vector(v1, "v1 after copy");
 
