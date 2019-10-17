@@ -3,7 +3,9 @@ CXXFLAGS = -Wall -Wextra -g -std=c++17
 
 SRC = 01_reverse_order.cc    \
 	02_isprime.cc          \
-	03_erasieve.cc
+	03_erasieve.cc         \
+	04_isprime_stdvector.cc         \
+	05_erasieve_stdvector.cc
 
 EXE = $(SRC:.cc=.x)
 
