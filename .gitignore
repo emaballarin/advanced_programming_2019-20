@@ -23,6 +23,7 @@
 *.exe
 *.so
 *.a
+a.out
 
 # Code analysis configuration files
 compile_flags.txt
