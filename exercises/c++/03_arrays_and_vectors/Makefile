@@ -1,7 +1,9 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -g -std=c++17
 
-SRC = 01_02_transpose.cc
+SRC = 01_02_transpose.cc	\
+	  03_meanmedian.cc		\
+	  04_deduplicate_words.cc
 
 EXE = $(SRC:.cc=.x)
 
