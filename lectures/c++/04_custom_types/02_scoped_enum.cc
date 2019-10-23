@@ -1,5 +1,6 @@
 #include <iostream>
 
+// Mind the CLASS KEYWORD!
 enum class color
 {
     red,
