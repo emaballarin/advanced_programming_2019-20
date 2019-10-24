@@ -5,7 +5,7 @@
 #if __cplusplus > 201103L
 
 // Templated heap inizialization (for the new keyword; and auto return type (C++14))
-template <class T>
+template<class T>
 auto init(const std::size_t l)
 {
     return new T[l]{};
@@ -14,8 +14,8 @@ auto init(const std::size_t l)
 #else
 
 // Templated heap inizialization (for the new keyword; WITHOUT auto return type (C++11))
-template <class T>
-T *init(const std::size_t l)
+template<class T>
+T* init(const std::size_t l)
 {
     return new T[l]{};
 }

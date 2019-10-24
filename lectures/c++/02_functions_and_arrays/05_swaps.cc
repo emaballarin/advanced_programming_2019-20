@@ -2,11 +2,11 @@
 #include <utility>  //std::swap
 
 void buggy_swap(int a, int b);
-void c_swap(int *a, int *b);
-void cxx_swap(int &a, int &b);
+void c_swap(int* a, int* b);
+void cxx_swap(int& a, int& b);
 
-template <typename T>
-void templ_swap(T &a, T &b);
+template<typename T>
+void templ_swap(T& a, T& b);
 
 int main()
 {
@@ -43,22 +43,22 @@ void buggy_swap(int a, int b)
     a = tmp;
 }
 
-void c_swap(int *a, int *b)
+void c_swap(int* a, int* b)
 {
     int tmp{*b};
     *b = *a;
     *a = tmp;
 }
 
-void cxx_swap(int &a, int &b)
+void cxx_swap(int& a, int& b)
 {
     int tmp{b};
     b = a;
     a = tmp;
 }
 
-template <typename T>
-void templ_swap(T &a, T &b)
+template<typename T>
+void templ_swap(T& a, T& b)
 {
     T tmp{b};
     b = a;

@@ -5,7 +5,7 @@ int main()
     std::cout << "Please insert array lenght: ";
     std::size_t n;
     std::cin >> n;
-    int *da{new int[n]};  // allocated on the HEAP, or free-store
+    int* da{new int[n]};  // allocated on the HEAP, or free-store
 
     for (std::size_t i{0}; i < n; ++i) da[i] = i * 10;
 

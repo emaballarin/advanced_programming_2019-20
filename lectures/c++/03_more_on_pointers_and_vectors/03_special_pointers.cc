@@ -1,23 +1,23 @@
 #include <cstring>  // strcmp
 #include <iostream>
 
-int func1(const char *a);
-int func2(const char *a);
-void func3(const char *a);
+int func1(const char* a);
+int func2(const char* a);
+void func3(const char* a);
 
 int main()
 {
     int a{8};
-    int *pi{&a};
+    int* pi{&a};
 
-    char **ppc;
+    char** ppc;
 
-    int *ap[7];
+    int* ap[7];
 
-    void *pv{pi};
+    void* pv{pi};
     // *pv; // we cannot dereference void*
     // ++pv; // we cannot increment. Why?
-    int *pi2{static_cast<int *>(pv)};
+    int* pi2{static_cast<int*>(pv)};
 
     pv = ppc;
     pv = ap;
@@ -27,14 +27,14 @@ int main()
     ppc = nullptr;
     // ap = nullptr;  // error, why?
     ap[0] = nullptr;
-    int **bbb;
+    int** bbb;
     bbb = ap;
     pv = nullptr;
     pi2 = 0;  // older codes. gets the nullptr
 
     // pi = NULL; // please don't do this
 
-    double *da{new double[5]{}};
+    double* da{new double[5]{}};
     delete[] da;  // dangling pointer
     da = nullptr;
 
@@ -57,7 +57,7 @@ int main()
     else
         std::cout << "different\n";
 
-    int (*fp)(const char *);
+    int (*fp)(const char*);
     fp = func1;
 
     fp("hello");
@@ -76,19 +76,19 @@ int main()
     return 0;
 }
 
-int func1(const char *a)
+int func1(const char* a)
 {
     std::cout << "1111: " << a << std::endl;
     return 1;
 }
 
-int func2(const char *a)
+int func2(const char* a)
 {
     std::cout << "2222: " << a << std::endl;
     return 2;
 }
 
-void func3(const char *a)
+void func3(const char* a)
 {
     std::cout << "3333: " << a << std::endl;
 }

@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 
-template <typename num>
+template<typename num>
 class Vector
 {
-    num *elem;
+    num* elem;
     std::size_t _size;
 
-        public:
+    public:
     Vector(const std::size_t size) : elem{new num[size]}, _size{size} {}
 
     // automatically release the acquired memory
@@ -16,14 +16,14 @@ class Vector
     // try to remove the const and recompile
     std::size_t size() const { return _size; }
 
-    num &operator[](const std::size_t i) { return elem[i]; }
+    num& operator[](const std::size_t i) { return elem[i]; }
 
     // try to comment this line and recompile
-    const num &operator[](const std::size_t i) const { return elem[i]; }
+    const num& operator[](const std::size_t i) const { return elem[i]; }
 };
 
-template <typename T>
-std::ostream &operator<<(std::ostream &os, const Vector<T> &v)
+template<typename T>
+std::ostream& operator<<(std::ostream& os, const Vector<T>& v)
 {
     for (auto i = 0u; i < v.size(); ++i) os << "v[" << i << "] = " << v[i] << std::endl;
     return os;
@@ -37,7 +37,7 @@ int main()
 
     std::cout << v << std::endl;
 
-    Vector<double> *pv{&v};
+    Vector<double>* pv{&v};
 
     // first dereference the pointer, then I can use the defined operators
     (*pv)[0] = -99.999;
@@ -46,7 +46,7 @@ int main()
 
     std::cout << *pv << std::endl;
 
-    Vector<double> &rv{v};
+    Vector<double>& rv{v};
 
     rv[5] = 555;
 

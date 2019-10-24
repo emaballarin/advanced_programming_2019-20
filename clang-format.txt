@@ -1,6 +1,6 @@
 ﻿---
 BasedOnStyle: Microsoft
-AccessModifierOffset: '4'
+AccessModifierOffset: '0'
 AlignAfterOpenBracket: Align
 AlignConsecutiveMacros: 'true'
 AlignConsecutiveAssignments: 'false'
@@ -44,11 +44,13 @@ Language: Cpp
 MaxEmptyLinesToKeep: '2'
 NamespaceIndentation: All
 ObjCBinPackProtocolList: Never
-PointerAlignment: Right
+PointerAlignment: Left
 ReflowComments: 'false'
 SortIncludes: 'true'
 SortUsingDeclarations: 'true'
 SpaceAfterCStyleCast: 'false'
+SpaceAfterLogicalNot: 'false'
+SpaceAfterTemplateKeyword: 'false'
 SpaceBeforeAssignmentOperators: 'true'
 SpaceBeforeRangeBasedForLoopColon: 'true'
 SpaceInEmptyParentheses: 'false'

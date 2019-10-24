@@ -5,8 +5,8 @@
 // template<class T, class Allocator = std::allocator<T>>
 // class vector;
 
-template <typename T>
-void print_vector(const std::vector<T> &v, const std::string &s);
+template<typename T>
+void print_vector(const std::vector<T>& v, const std::string& s);
 
 int main()
 {
@@ -32,10 +32,10 @@ int main()
     return 0;
 }
 
-template <typename T>
-void print_vector(const std::vector<T> &v, const std::string &s)
+template<typename T>
+void print_vector(const std::vector<T>& v, const std::string& s)
 {
     std::cout << s << ": ";
-    for (const auto &x : v) std::cout << x << " ";
+    for (const auto& x : v) std::cout << x << " ";
     std::cout << std::endl;
 }

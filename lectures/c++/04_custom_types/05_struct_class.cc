@@ -19,7 +19,7 @@ class Point_c
     double x;
     double y;
 
-        public:
+    public:
     void print() { std::cout << "Class. x = " << x << "; y = " << y << std::endl; }  // note no ; at the end
 };                                                                                   // note ; at the end
 
@@ -35,11 +35,11 @@ int main()
     // pc.x =7.6; // error
     pc.print();  // I can access private data through public functions
 
-    Point_s *p = &ps;
+    Point_s* p = &ps;
     p->x = 0.0;
     p->print();
 
-    auto &pr = ps;
+    auto& pr = ps;
     ++pr.x;
     pr.print();
 

@@ -6,7 +6,7 @@ void print_ma(int m[][5], int dim1);  // ugly and not flexible
 // dimension must be
 // knwon at compile time
 
-void print_ma(int *p, int row, int col);  // the only possible solution
+void print_ma(int* p, int row, int col);  // the only possible solution
 
 int main()
 {
@@ -29,7 +29,7 @@ int main()
 
     // int *pma {ma}; 		// error
     // int *pma[5] {ma};		// error
-    int *p{reinterpret_cast<int *>(ma)};
+    int* p{reinterpret_cast<int*>(ma)};
     // int* p {&ma[0][0]};
 
     // print_ma(ma, 6, 5); 	// error
@@ -45,7 +45,7 @@ int main()
     return 0;
 }
 
-void print_ma(int *p, int row, int col)
+void print_ma(int* p, int row, int col)
 {
     for (int i = 0; i < row; ++i)
     {

@@ -1,6 +1,6 @@
 #include <iostream>
 
-template <typename T>
+template<typename T>
 T dwim(const T a, const T b);
 
 int main()
@@ -14,7 +14,7 @@ int main()
     return 0;
 }
 
-template <typename T>
+template<typename T>
 T dwim(const T a, const T b)
 {
     return a + b;
