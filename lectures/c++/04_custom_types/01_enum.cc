@@ -12,9 +12,15 @@ void dwim(const color c)
 {
     switch (c)
     {
-        case red: std::cout << "option 1: red\n"; break;
-        case yellow: std::cout << "option 2: yellow\n"; break;
-        case green: std::cout << "option 3: green\n"; break;
+        case red:
+            std::cout << "option 1: red\n";
+            break;
+        case yellow:
+            std::cout << "option 2: yellow\n";
+            break;
+        case green:
+            std::cout << "option 3: green\n";
+            break;
         default:
             std::cout << "unknown option\n";  // should I exit the program?
             break;

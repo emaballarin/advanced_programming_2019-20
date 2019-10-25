@@ -63,7 +63,10 @@ int main()
     test = a >= b;
     test = a != b;
 
-    if (test) { std::cout << "test is true\n"; }
+    if (test)
+    {
+        std::cout << "test is true\n";
+    }
     else
     {
         std::cout << "test is false\n";

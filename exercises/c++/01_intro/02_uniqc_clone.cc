@@ -12,7 +12,10 @@ int main()
 
     for (std::string linefeed; std::getline(std::cin, linefeed);)  // Acceptable variable shadowing (-Wshadow)
     {
-        if (previous_line == linefeed) { wordcnt++; }
+        if (previous_line == linefeed)
+        {
+            wordcnt++;
+        }
         else
         {
             std::cout << "     " << wordcnt << " " << previous_line

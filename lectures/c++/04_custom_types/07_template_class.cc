@@ -8,24 +8,39 @@ class Vector
     std::size_t _size;
 
     public:
-    Vector(const std::size_t size) : elem{new num[size]}, _size{size} {}
+    Vector(const std::size_t size) : elem{new num[size]}, _size{size}
+    {
+    }
 
     // automatically release the acquired memory
-    ~Vector() { delete[] elem; }
+    ~Vector()
+    {
+        delete[] elem;
+    }
 
     // try to remove the const and recompile
-    std::size_t size() const { return _size; }
+    std::size_t size() const
+    {
+        return _size;
+    }
 
-    num& operator[](const std::size_t i) { return elem[i]; }
+    num& operator[](const std::size_t i)
+    {
+        return elem[i];
+    }
 
     // try to comment this line and recompile
-    const num& operator[](const std::size_t i) const { return elem[i]; }
+    const num& operator[](const std::size_t i) const
+    {
+        return elem[i];
+    }
 };
 
 template<typename T>
 std::ostream& operator<<(std::ostream& os, const Vector<T>& v)
 {
-    for (auto i = 0u; i < v.size(); ++i) os << "v[" << i << "] = " << v[i] << std::endl;
+    for (auto i = 0u; i < v.size(); ++i)
+        os << "v[" << i << "] = " << v[i] << std::endl;
     return os;
 }
 
@@ -33,7 +48,8 @@ int main()
 {
     Vector<double> v{10};
 
-    for (auto i = 0u; i < v.size(); ++i) v[i] = i;
+    for (auto i = 0u; i < v.size(); ++i)
+        v[i] = i;
 
     std::cout << v << std::endl;
 

@@ -13,7 +13,8 @@ int main()
 
     int i{};
 
-    while (i < 10) std::cout << i++ << " ";
+    while (i < 10)
+        std::cout << i++ << " ";
 
     std::cout << "\n after while i is " << i << "\n";
 
@@ -28,7 +29,8 @@ int main()
 
     for (i = 0; i < 5; ++i)
     {
-        if (i == 2) break;
+        if (i == 2)
+            break;
         std::cout << i << std::endl;
     }
 
@@ -36,7 +38,8 @@ int main()
 
     for (i = 0; i < 5; ++i)
     {
-        if (i == 2) continue;
+        if (i == 2)
+            continue;
         std::cout << i << std::endl;
     }
 

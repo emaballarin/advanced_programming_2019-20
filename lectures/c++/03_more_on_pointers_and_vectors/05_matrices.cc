@@ -13,17 +13,20 @@ int main()
     int ma[6][5];  // matrix: 6 rows, 5 columns each
 
     for (int i = 0; i < 6; ++i)
-        for (int j = 0; j < 5; ++j) ma[i][j] = 10 * i + j;
+        for (int j = 0; j < 5; ++j)
+            ma[i][j] = 10 * i + j;
 
     for (int i = 0; i < 6; ++i)
     {
-        for (int j = 0; j < 5; ++j) std::cout << std::setw(3) << ma[i][j];
+        for (int j = 0; j < 5; ++j)
+            std::cout << std::setw(3) << ma[i][j];
         std::cout << std::endl;
     }
 
     for (int i = 0; i < 6; ++i)
     {
-        for (int j = 0; j < 5; ++j) std::cout << &ma[i][j] << " ";
+        for (int j = 0; j < 5; ++j)
+            std::cout << &ma[i][j] << " ";
         std::cout << std::endl;
     }
 
@@ -49,7 +52,8 @@ void print_ma(int* p, int row, int col)
 {
     for (int i = 0; i < row; ++i)
     {
-        for (int j = 0; j < col; ++j) std::cout << std::setw(2) << p[i * col + j] << " ";
+        for (int j = 0; j < col; ++j)
+            std::cout << std::setw(2) << p[i * col + j] << " ";
         std::cout << std::endl;
     }
 }

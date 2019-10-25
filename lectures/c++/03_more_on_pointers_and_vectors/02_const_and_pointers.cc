@@ -36,5 +36,6 @@ void print_sentinel(const T* a, const std::size_t N)
 {
     const T* const end{
       a + N};  // Pointer to the LAST element, plus one. a[N] must remain constant, because it is not part of a.
-    for (; a != end; ++a) std::cout << *a << std::endl;  // Methodology of "pointer arithmetics" as in the STL.
+    for (; a != end; ++a)
+        std::cout << *a << std::endl;  // Methodology of "pointer arithmetics" as in the STL.
 }

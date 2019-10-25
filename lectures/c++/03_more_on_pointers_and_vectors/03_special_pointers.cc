@@ -38,13 +38,17 @@ int main()
     delete[] da;  // dangling pointer
     da = nullptr;
 
-    if (pi != nullptr) std::cout << "pi is not nullptr and I can dereference it " << *pi << std::endl;
+    if (pi != nullptr)
+        std::cout << "pi is not nullptr and I can dereference it " << *pi << std::endl;
 
-    if (pi) std::cout << "pi is not nullptr and I can dereference it " << *pi << std::endl;
+    if (pi)
+        std::cout << "pi is not nullptr and I can dereference it " << *pi << std::endl;
 
-    if (pi == nullptr) std::cout << "pi is nullptr and I CANNOT dereference it \n";
+    if (pi == nullptr)
+        std::cout << "pi is nullptr and I CANNOT dereference it \n";
 
-    if (!pi) std::cout << "pi is nullptr and I CANNOT dereference it \n";
+    if (!pi)
+        std::cout << "pi is nullptr and I CANNOT dereference it \n";
 
     // strings are special type of char[]
     char word[]{"Hello"};

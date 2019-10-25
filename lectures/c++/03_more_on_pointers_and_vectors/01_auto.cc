@@ -32,7 +32,8 @@ int main()
     auto ui = 0u;           // unsigned int
     auto llui = 0llu;       // long long unsigned int
 
-    for (auto i = 0; i < 7; ++i) std::cout << i << std::endl;
+    for (auto i = 0; i < 7; ++i)
+        std::cout << i << std::endl;
 
     auto pb = &b;  // guess what.. How can I know?
 
