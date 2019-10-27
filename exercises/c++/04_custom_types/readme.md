@@ -94,4 +94,3 @@ Study and try to understand the file [multiple_flags.cc](./multiple_flags.cc)
 ## Optional: range-for-loop
 
 Implement the range-for-loop for the class `Vector<class T>` we have written.
-

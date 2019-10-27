@@ -27,6 +27,7 @@ a.out
 
 # Code analysis configuration files
 compile_flags.txt
+compile_commands.json
 
 # Clang Formatter
 .clang-format
