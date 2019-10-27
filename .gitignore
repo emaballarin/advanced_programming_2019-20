@@ -6,13 +6,14 @@
 **/.atom/
 
 # Configuration files
-/AdvancedProgramming20192020.cflags
-/AdvancedProgramming20192020.config
-/AdvancedProgramming20192020.creator
-/AdvancedProgramming20192020.creator.user
-/AdvancedProgramming20192020.cxxflags
-/AdvancedProgramming20192020.files
-/AdvancedProgramming20192020.includes
+/Makefile.user
+/advanced_programming_2019-20.cflags
+/advanced_programming_2019-20.config
+/advanced_programming_2019-20.creator
+/advanced_programming_2019-20.creator.user
+/advanced_programming_2019-20.cxxflags
+/advanced_programming_2019-20.files
+/advanced_programming_2019-20.includes
 
 # Dolphin configuration
 .directory

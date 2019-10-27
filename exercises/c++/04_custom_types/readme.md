@@ -12,6 +12,7 @@ Implement a class `Date`. This class must meet the following requirements:
 	- `add_days(const unsigned int n)` which adds `n` days. You have to take care to increment months and years accordingly (neglect leap years)
 
 *Hints*:
+
 - you can add more functions, maybe private, to simplify the implementation of the above (e.g., you can implement a function that adds 1 single day)
 - remember to properly mark the member functions that do not modify the class as `const`
 - you should think where to implement the member functions, i.e. inside the class declaration or outside
