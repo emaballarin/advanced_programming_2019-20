@@ -44,7 +44,7 @@ printed.
 
 [link to file](./03_error.cc)
 
-Again the same example of the square root function, but this time the [ap_error.h](./ap_error.h)
+Again the same example of the square root function, but this time the [ap_error.hpp](./ap_error.hpp)
 header file is used.
 We can see the behaviour of the `AP_ERROR()` macro, and that of several other macros defined there.
 
@@ -90,7 +90,7 @@ CPL: 5.2.1 unique_ptr and shared_ptr
 
 
 
-## ap_error.h
+## ap_error.hpp
 
 In this header file there are the implementations of the macros used in the previous programs.
 You can find a description of its main features and some examples of its usage at the beginning

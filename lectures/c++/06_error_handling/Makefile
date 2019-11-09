@@ -4,7 +4,7 @@ SRC = 00_errno.cc            \
       03_error.cc            \
       04_assert.cc           \
       05_stack_unwinding.cc  \
-      06_smart_pointers.cc   
+      06_smart_pointers.cc
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -g -std=c++11
@@ -22,7 +22,7 @@ all: $(EXE)
 
 .PHONY: all
 
-%.x: %.cc 
+%.x: %.cc
 	$(CXX) $< -o $@ $(CXXFLAGS)
 
 format: $(SRC)

@@ -1,4 +1,4 @@
-#include "ap_error.h"
+#include "ap_error.hpp"
 
 #include <cmath>
 #include <iostream>
