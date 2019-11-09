@@ -35,9 +35,9 @@ clean:
 
 .PHONY: clean
 
-03_error.x: ap_error.h
-04_assert.x: ap_error.h
-05_stack_unwinding.x: ap_error.h
-06_smart_pointers.x: ap_error.h
+03_error.x: ap_error.hpp
+04_assert.x: ap_error.hpp
+05_stack_unwinding.x: ap_error.hpp
+06_smart_pointers.x: ap_error.hpp
 
-format: ap_error.h
+format: ap_error.hpp
