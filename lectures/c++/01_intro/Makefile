@@ -6,7 +6,9 @@ SRC = 01_variables.cc          \
     03_loops.cc                \
     04_vars_pointers_refs.cc   \
     05_functions.cc            \
-    06_watch_out.cc
+    06_watch_out.cc            \
+    first.cc                   \
+    hello.cc
 
 EXE = $(SRC:.cc=.x)
 
