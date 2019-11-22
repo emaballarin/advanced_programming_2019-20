@@ -1,6 +1,6 @@
 #include <iostream>
 
-// forward declaration
+// forward declaration (a.k.a. prototype)
 int dwim(const int a, const int b);
 double dwim(const double a, const double b);
 float dwim(const float a, const float b);

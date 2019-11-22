@@ -26,7 +26,7 @@ int main()
     std::cout << "on my machine the size of a bool is " << sizeof(bool) << " bytes\n";
 
     // if you want to make sure an int is e.g. 2 bytes use special
-    // variables names
+    // variables types (usually ending in "_t")
     int16_t small_int{};
     std::cout << "on every machine the size of variable small_int is " << sizeof(small_int) << " bytes\n";
 
