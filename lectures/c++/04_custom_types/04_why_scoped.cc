@@ -21,7 +21,7 @@ using namespace std;
 int main()
 {
     cout << nov << endl;
-    // cout << dec << endl;
+    //cout << dec << endl;
 
     return 0;
 }

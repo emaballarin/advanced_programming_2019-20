@@ -137,6 +137,7 @@ template<typename T>
 Vector<T> operator+(const Vector<T>& lhs, const Vector<T>& rhs)
 {
     const auto size = lhs.size();
+    std::cout << "Sum operator" << std::endl;
 
     // how we should check that the two vectors have the same size?
 

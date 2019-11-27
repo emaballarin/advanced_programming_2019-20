@@ -4,7 +4,7 @@
 void print_ma(int m[][5], int dim1);  // ugly and not flexible
 // void print_ma(int m[][], int dim1, int dim2); // error second
 // dimension must be
-// knwon at compile time
+// known at compile time
 
 void print_ma(int* p, int row, int col);  // the only possible solution
 

@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <vector>  // ALways in the HEAP
+#include <vector>  // Always in the HEAP
 
 // template<class T, class Allocator = std::allocator<T>>
 // class vector;

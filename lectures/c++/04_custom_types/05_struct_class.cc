@@ -42,9 +42,12 @@ int main()
     p->x = 0.0;
     p->print();
 
+    std::cout << "-----------------" << std::endl;
     auto& pr = ps;
     ++pr.x;
     pr.print();
+    ps.print();
+    std::cout << "-----------------" << std::endl;
 
     Point_s array_of_structs[8];  // built-in array
     array_of_structs[0].x = 1;
