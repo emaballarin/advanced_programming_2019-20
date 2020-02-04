@@ -3,8 +3,9 @@
 
 #include <iostream>
 
-inline void dummy() {
-  std::cout << "dummy\n";
+inline void dummy()
+{
+    std::cout << "dummy\n";
 }
 
 #endif /* _FUNC_H_ */

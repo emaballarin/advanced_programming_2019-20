@@ -11,7 +11,7 @@ SRC = 00_first_trial.cc         \
 CXX = c++
 CXXFLAGS = -W -Wall -Wextra -g -std=c++11
 
-CXXFLAGS += -I ../06_error_handling  # needed by the compiler to find the header
+CXXFLAGS += -I../06_error_handling  # needed by the compiler to find the header
 
 VPATH = ../06_error_handling # needed by makefile to look for files
 

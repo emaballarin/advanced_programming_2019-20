@@ -3,9 +3,13 @@
 
 #include <iostream>
 
-struct A {
-  int a;
-  A() { std::cout << "A ctor\n"; }
+struct A
+{
+    int a;
+    A()
+    {
+        std::cout << "A ctor\n";
+    }
 };
 
 // A::A() { std::cout << "A ctor\n"; } // why not?

@@ -3,10 +3,11 @@
 
 #include <iostream>
 
-struct date {
-  unsigned int day;
-  unsigned int month;
-  unsigned int year;
+struct date
+{
+    unsigned int day;
+    unsigned int month;
+    unsigned int year;
 };
 
 std::ostream& operator<<(std::ostream&, const date&);

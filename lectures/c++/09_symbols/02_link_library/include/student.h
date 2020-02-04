@@ -5,10 +5,11 @@
 #include <iostream>
 #include <string>
 
-struct student {
-  std::string name;
-  date birth;
-  float avg;
+struct student
+{
+    std::string name;
+    date birth;
+    float avg;
 };
 
 std::ostream& operator<<(std::ostream&, const student&);

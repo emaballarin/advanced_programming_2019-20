@@ -1,5 +1,7 @@
 #include "src2.h"
+
 #include "func.h"
-void dummy2() {
-  dummy();
+void dummy2()
+{
+    dummy();
 }
