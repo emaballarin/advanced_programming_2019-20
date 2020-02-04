@@ -14,15 +14,15 @@ using namespace std;
 
 
 // PROTOTYPES
-template <size_t arraydim>
+template<size_t arraydim>
 array<double, arraydim> transpose(array<double, arraydim> matrix, size_t rows);
 
-template <size_t arraydim>
+template<size_t arraydim>
 void printmatrix_byrow(array<double, arraydim> matrix, size_t rows);
 
 
 // FUNC IMPLEMENTATIONS
-template <size_t arraydim>
+template<size_t arraydim>
 array<double, arraydim> transpose(array<double, arraydim> matrix, size_t rows)
 {
     array<double, arraydim> retmatrix{};
@@ -33,19 +33,25 @@ array<double, arraydim> transpose(array<double, arraydim> matrix, size_t rows)
     // - "solve" the print algorithm for (i,j) = (j,i) starting from the result
     for (usl i{0}; i < cols; ++i)
     {
-        for (usl j{0}; j < rows; ++j) { retmatrix[i * rows + j] = matrix[j * cols + i]; }
+        for (usl j{0}; j < rows; ++j)
+        {
+            retmatrix[i * rows + j] = matrix[j * cols + i];
+        }
     }
     return retmatrix;
 }
 
-template <size_t arraydim>
+template<size_t arraydim>
 void printmatrix_byrow(array<double, arraydim> matrix, size_t rows)
 {
     size_t cols{static_cast<size_t>(arraydim / rows)};
 
     for (usl i{0}; i < rows; ++i)
     {
-        for (usl j{0}; j < cols; ++j) { cout << setw(6) << matrix[i * cols + j] << " "; }
+        for (usl j{0}; j < cols; ++j)
+        {
+            cout << setw(6) << matrix[i * cols + j] << " ";
+        }
         cout << endl;
         cout << endl;
     }
@@ -53,7 +59,7 @@ void printmatrix_byrow(array<double, arraydim> matrix, size_t rows)
 
 
 // MAIN
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
     // This script must be called as:
     // 01_02_transpose.x [rows]

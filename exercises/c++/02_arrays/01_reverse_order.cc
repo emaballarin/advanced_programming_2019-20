@@ -2,26 +2,27 @@
 using namespace std;
 
 
-template <typename TName>
-TName *valloc(size_t vdim);
+template<typename TName>
+TName* valloc(size_t vdim);
 
-template <typename TName>
+template<typename TName>
 void revorder(TName inarray, size_t vdim);
 
 
-template <typename TName>
-TName *valloc(size_t vdim)
+template<typename TName>
+TName* valloc(size_t vdim)
 {
     return (new TName[vdim]);
 }
 
-template <typename TName>
-void printrev(TName *inarray, size_t vdim)
+template<typename TName>
+void printrev(TName* inarray, size_t vdim)
 {
     for (size_t elem = vdim; 1; elem--)
     {
         cout << inarray[elem - 1] << " ";
-        if (elem == 1) break;
+        if (elem == 1)
+            break;
     }
     cout << endl;
 }
@@ -33,8 +34,8 @@ int main()
     cout << "Insert the dimension if the array... " << endl;
     cin >> getvdim;
 
-    int *intarray = valloc<int>(getvdim);
-    double *dblarray = valloc<double>(getvdim);
+    int* intarray = valloc<int>(getvdim);
+    double* dblarray = valloc<double>(getvdim);
 
     cout << "Insert the elements of the array..." << endl;
 

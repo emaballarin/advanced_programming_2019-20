@@ -12,7 +12,10 @@ bool isprime(usl nin)
 {
     for (usl i = 2ul; i <= floor(sqrt(nin)); i++)
     {
-        if ((nin % i) == 0) { return 0; }
+        if ((nin % i) == 0)
+        {
+            return 0;
+        }
     }
     return 1;
 }
@@ -24,9 +27,15 @@ int main()
     // Populate array checking for primality on the fly...
     for (usl i = 2ul; i <= 100ul; i++)
     {
-        if (isprime(i)) { searchspace.push_back(i); }
+        if (isprime(i))
+        {
+            searchspace.push_back(i);
+        }
     }
 
     // Print result.
-    for (usl k : searchspace) { cout << k << endl; }
+    for (usl k : searchspace)
+    {
+        cout << k << endl;
+    }
 }

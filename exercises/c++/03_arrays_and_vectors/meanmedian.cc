@@ -21,7 +21,10 @@ double mean_stdvec(vector<double> invector)
 
     // Compute sum of elements
     double vecsum{};
-    for (double number : invector) { vecsum += number; }
+    for (double number : invector)
+    {
+        vecsum += number;
+    }
 
     // Actually Compute mean
     mean = (vecsum / static_cast<double>(invector.size()));
@@ -69,7 +72,9 @@ int main()
 
     // Read input line by line + Count lines;
     for (std::string linefeed; std::getline(std::cin, linefeed);)  // Acceptable variable shadowing (-Wshadow)
-    { accumulator.push_back(stod(linefeed)); }
+    {
+        accumulator.push_back(stod(linefeed));
+    }
 
     // Compute the mean and the median
 
