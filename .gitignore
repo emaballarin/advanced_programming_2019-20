@@ -19,6 +19,7 @@ Makefile.user
 *.includes
 **/.cproject
 **/.project
+.clangd/
 
 # File manager configuration files
 .directory
@@ -105,3 +106,5 @@ a.out
 # VirtualEnv configuration files
 .venv
 pip-selfcheck.json
+
+lectures/c\+\+/09_symbols/02_link_library/ap

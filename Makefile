@@ -3,6 +3,8 @@
 
 default: all
 
+bear: clean all
+
 all:
 	+$(MAKE) $@ -C lectures
 	+$(MAKE) $@ -C exercises
@@ -16,4 +18,12 @@ format:
 	+$(MAKE) $@ -C lectures
 	+$(MAKE) $@ -C exercises
 
-.PHONY: all clean format default
+clangify:
+	+find . -type d -exec cp -f "./.clang-format" {} \;
+
+clangify-revert:
+	+cp -f ./.clang-format ./.clang-format-backup
+	+find . -type d -exec rm -R -f {}/./.clang-format \;
+	+mv -f ./.clang-format-backup ./.clang-format
+
+.PHONY: all bear clean format default clangify clangify-revert
